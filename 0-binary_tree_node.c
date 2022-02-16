@@ -7,12 +7,12 @@
  */
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 {
-  binary_tree_t *btn = (binary_tree_t*)malloc(sizeof(binary_tree_t));
-  if (btn == NULL)
-    return (NULL);
-  btn->n = value;
-  btn->parent = parent;
-  btn->left = NULL;
-  btn->right = NULL;
-  return (btn);
+binary_tree_t *btn = (binary_tree_t*)malloc(sizeof(binary_tree_t));
+if (btn == NULL)
+return (NULL);
+btn->n = value;
+btn->parent = parent;
+btn->left = NULL;
+btn->right = NULL;
+return (btn);
 }
